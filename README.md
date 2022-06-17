@@ -1,6 +1,7 @@
 # Botanique
 
-[![Android CI](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml)  
+[![Android CI](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml)
+[![BCH compliance](https://bettercodehub.com/edge/badge/Alex-XJK/Botanique?branch=master)](https://bettercodehub.com/)  
 
 The frontend Android application of our Botanique Team.
 
