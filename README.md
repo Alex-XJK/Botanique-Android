@@ -1,6 +1,8 @@
 # Botanique
 
-[![Android CI](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml) [![Dependency Review](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml) [![BCH compliance](https://bettercodehub.com/edge/badge/Alex-XJK/Botanique?branch=master)](https://bettercodehub.com/)
+[![Android CI](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml) 
+[![Dependency Review](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml) 
+[![BCH compliance](https://bettercodehub.com/edge/badge/Alex-XJK/Botanique?branch=master)](https://bettercodehub.com/)
 
 The frontend Android application of our Botanique Team.
 
@@ -16,12 +18,12 @@ Under the direction of Mr. Zhiyuan ZHANG, the technical head and implemented by 
 
 ## System settings
 
-> Android SDK 12.0(S), API Level 31
-> Android Virtual Device: Nexus 5
+> Android SDK 12.0(S), API Level 31  
+> Android Virtual Device: Nexus 5  
 >
-> Dev. CPU: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
-> Dev. GPU: Intel(R) UHD Graphics 630 & NVIDIA GeForce RTX 2080 Ti
-> OS: Windows 10, 21H2
+> Init. Dev. CPU: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz  
+> Init. Dev. GPU: Intel(R) UHD Graphics 630 & NVIDIA GeForce RTX 2080 Ti  
+> Init. OS: Windows 10, 21H2  
 
 ## Automated quality check process
 
