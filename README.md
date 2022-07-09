@@ -21,7 +21,7 @@ Under the direction of Mr. Zhiyuan ZHANG, the technical head and implemented by 
 >
 > Dev. CPU: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz  
 > Dev. GPU: Intel(R) UHD Graphics 630 & NVIDIA GeForce RTX 2080 Ti  
-> OS: Windows 10, 21H2  
+> OS: Windows 10, 21H2
 
 ## Automated quality check process
 
