@@ -1,7 +1,8 @@
 # Botanique
 
 [![Android CI](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/android.yml) 
-[![Dependency Review](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml/badge.svg?branch=master)](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml) 
+![Maintenance](https://img.shields.io/maintenance/yes/2022)
+[![Dependency Review](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml/badge.svg?branch=alex-dev)](https://github.com/Alex-XJK/Botanique/actions/workflows/dependency-review.yml)<!--To avoid the red cross caused by organization's repo access permissions--> 
 [![BCH compliance](https://bettercodehub.com/edge/badge/Alex-XJK/Botanique?branch=master)](https://bettercodehub.com/)
 
 The frontend Android application of our Botanique Team.
@@ -27,7 +28,8 @@ Under the direction of Mr. Zhiyuan ZHANG, the technical head and implemented by 
 
 ## Automated quality check process
 
-1. **Android CI**: Use the Android environment to simulate building the entire product to make sure it is bug-free and can be built correctly.
+1. **Android CI**: Use the Android environment to simulate building the entire product to make sure it is bug-free and can be built correctly.**☆**  
+
 2. **Better Code Hub**: Judging the quality of the code from 10 professional perspectives, including the length of code segments, couple architecture and other aspects.
 3. **Dependency Review**: Detecting vulnerable dependencies to make sure the over all security.
 4. **Restyled**: Ensure that all code styles are consistent and aesthetically pleasing.
