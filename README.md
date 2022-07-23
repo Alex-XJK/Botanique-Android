@@ -14,7 +14,7 @@ We are a team of student entrepreneurs from the City University of Hong Kong, fo
 
 This project is our team's code repository for Android application development (According to the deputy technical head, Mr. XU, `Report 202205D`, we will develop iOS applications in the future).
 
-Under the direction of Mr. Zhiyuan ZHANG, the technical head and implemented by Mr. Jiakai XU, the deputy technical head (frontend) at that time, we started the initial development of this part of the code and the platform building in May 2022.
+Under the direction of Mr. Zhiyuan ZHANG, the technical head and implemented by Mr. Jiakai XU and Mr.Yongheng YU, the deputy technical head (frontend) at that time, we started the initial development of this part of the code and the platform building in May 2022.
 
 ## System settings
 
