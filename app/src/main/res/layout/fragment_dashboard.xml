@@ -1,22 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+    <data>
+        <variable
+            name="data"
+            type="com.example.botanique.ui.dashboard.DashboardViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:background="@color/background_grey"
+        tools:context=".ui.dashboard.DashboardFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.29" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.37" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="@dimen/main_plant_size"
+            android:layout_height="@dimen/main_plant_size"
+            android:background="@drawable/plant_selector"
+            android:contentDescription="@string/main_Plant_Image_Button"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="@dimen/main_temp_size"
+            android:layout_height="@dimen/main_temp_size"
+            android:background="@drawable/temp_selector"
+            android:contentDescription="@string/main_Temp_Image_Button"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"
+            app:layout_constraintVertical_bias="0.523" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="@dimen/main_mud_size"
+            android:layout_height="@dimen/main_mud_size"
+            android:background="@drawable/mud_selector"
+            android:contentDescription="@string/main_Mud_Image_Button"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.182"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="@dimen/main_water_size"
+            android:layout_height="@dimen/main_water_size"
+            android:background="@drawable/water_selector"
+            android:contentDescription="@string/main_Water_Image_Button"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.699"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            app:layout_constraintVertical_bias="0.488"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="@dimen/main_radio_size"
+            android:layout_height="@dimen/main_radio_size"
+            android:background="@drawable/radio_selector"
+            android:contentDescription="@string/main_Radio_Image_Button"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.932"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7"
+            app:layout_constraintVertical_bias="0.457" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="@dimen/main_light_size"
+            android:layout_height="@dimen/main_light_size"
+            android:background="@drawable/light_selector"
+            android:contentDescription="@string/main_Light_Image_Button"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.58"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.307"
+            tools:ignore="ImageContrastCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -15,7 +15,7 @@ import com.example.botanique.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-
+    private NavController navController;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +29,22 @@ public class MainActivity extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        if (navController.getCurrentDestination().getId() == R.id.plantFragment ||
+            navController.getCurrentDestination().getId() == R.id.mudFragment ||
+            navController.getCurrentDestination().getId() == R.id.waterFragment ||
+            navController.getCurrentDestination().getId() == R.id.radioFragment ||
+            navController.getCurrentDestination().getId() == R.id.tempFragment ||
+            navController.getCurrentDestination().getId() == R.id.lightFragment)
+        {
+            navController.navigateUp();
+        }
+        return super.onSupportNavigateUp();
+    }
 }
