@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_dashboard">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -15,11 +15,60 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.botanique.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_plantFragment"
+            app:destination="@id/plantFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_radioFragment"
+            app:destination="@id/radioFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_mudFragment"
+            app:destination="@id/mudFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_tempFragment"
+            app:destination="@id/tempFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_waterFragment"
+            app:destination="@id/waterFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_lightFragment"
+            app:destination="@id/lightFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.botanique.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/mudFragment"
+        android:name="com.example.botanique.ui.dashboard.MudFragment"
+        android:label="fragment_mud"
+        tools:layout="@layout/fragment_mud" />
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.example.botanique.ui.dashboard.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" />
+    <fragment
+        android:id="@+id/plantFragment"
+        android:name="com.example.botanique.ui.dashboard.PlantFragment"
+        android:label="fragment_plant"
+        tools:layout="@layout/fragment_plant" />
+    <fragment
+        android:id="@+id/tempFragment"
+        android:name="com.example.botanique.ui.dashboard.TempFragment"
+        android:label="fragment_temp"
+        tools:layout="@layout/fragment_temp" />
+    <fragment
+        android:id="@+id/waterFragment"
+        android:name="com.example.botanique.ui.dashboard.WaterFragment"
+        android:label="fragment_water"
+        tools:layout="@layout/fragment_water" />
+    <fragment
+        android:id="@+id/lightFragment"
+        android:name="com.example.botanique.ui.dashboard.LightFragment"
+        android:label="fragment_light"
+        tools:layout="@layout/fragment_light" />
 </navigation>
